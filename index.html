@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Random Password Generator</h1>
+        <label for="lengthPassword">Password Length: </label>
+        <input type="number" id="lengthPassword" value="1">
+        <br>
+        <input type="checkbox" id="includeLowerCase">
+        <label for="includeLowerCase">Include Lowercase</label>
+        <br>
+        <input type="checkbox" id="includeUpperCase">
+        <label for="includeUpperCase">Include Uppercase</label>
+        <br>
+        <input type="checkbox" id="includeSymbols">
+        <label for="includeSymbols">Include Symbols</label>
+        <br>
+        <input type="checkbox" id="includeNumbers">
+        <label for="includeNumbers">Include Numbers</label>
+        <br>
+        <button id="mySubmit" type="button" onclick="generatePassword()">Generate Password</button>
+
+        <p id="result"></p>
+        <p id="password"></p>
+    </div>
+    <p id="author">Made by <a href="https://github.com/ganbnuray">Nuray Ganbarova</a></p>
+    <script src="index.js"></script>
+</body>
+
+</html>
